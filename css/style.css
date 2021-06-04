@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  height: 100px;
+  background-color: black;
+}
+
+
+
+.inner {
+
+}
+
+
+
+.title {
+  height: 100px;
+  background-color: #f2f2f2;
+  padding: 250px;
+}
+
+.title-inner {
+  text-align: center;
+}
+
+.main_title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.second_title {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+
+
+
+
+.description {
+  height: 100px;
+  background-color: #74cfae;
+}
+
+
+
+.work {
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+
+
+.skill {
+  height: 100px;
+  background-color: #4e4e4e;
+}
+
+
+
+.contact {
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  height: 100px;
+  background-color: #74cfae;
+}
