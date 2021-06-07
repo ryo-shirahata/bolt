@@ -117,7 +117,6 @@
 }
 
 .work_contents {
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -167,13 +166,44 @@
 
 
 
-
-
-
 .skill {
-  height: 100px;
+  height: 500px;
   background-color: #4e4e4e;
 }
+
+.skill-inner {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.skill_title {
+  color: #fff;
+  text-align: center;
+}
+
+.skill_contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill_item {
+  margin-left: 180px;
+}
+
+.skill_item:first-child {
+  margin-left: 0;
+}
+
+.skill_item_text {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
 
 
 
