@@ -204,14 +204,38 @@
 
 
 
-
-
-
 .contact {
-  height: 100px;
+  height: 500px;
   background-color: #f2f2f2;
 }
 
+.contact-inner {
+  padding: 200px 0;
+}
+
+.contact_contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #74cfae;
+}
+
+.contact_item {
+  width: 185px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_item a {
+  color: #74cfae;
+}
+
+.contact_item:hover {
+  background-color: #fff;
+  transition: all .3s;
+}
 
 
 
