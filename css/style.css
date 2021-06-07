@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 共通 */
 
 .clearfix:after {
   display: block;
@@ -10,6 +11,11 @@
 .wrapper {
   width: 100%;
 }
+
+.inner {
+}
+
+/* header */
 
 .header {
   height: 50px;
@@ -43,61 +49,60 @@
   color: #333;
 }
 
-
-
-
-.inner {
-
-}
-
-
+/* title */
 
 .title {
   height: 100px;
   background-color: #f2f2f2;
   padding: 250px;
 }
+
 .title-inner {
   text-align: center;
 }
+
 .main_title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
+
 .second_title {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
 }
 
-
+/* description */
 
 .description {
   height: 350px;
   background-color: #74cfae;
 }
+
 .description-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 50px;
 }
-.iphone_img {
-}
+
 .description_text {
   text-align: center;
   color: #fff;
   margin-left: 100px;
 }
+
 .main_description {
   font-size: 24px;
 }
+
 .second_description {
   font-size: 20px;
   margin-top: 35px;
 }
 
+/* work */
 
 .work {
   height: 1000px;
@@ -117,24 +122,37 @@
 }
 
 .work_contents {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 1100px;
+  height: 680px;
+  margin: 0 auto;
 }
 
-.work_item:nth-child(2),
-.work_item:nth-child(3),
-.work_item:nth-child(5),
-.work_item:nth-child(6) {
-  margin-left: 100px;
+.work_items {
+  text-align: center;
+  font-size: 0%;
 }
 
-.work_item:nth-child(4),
-.work_item:nth-child(5),
-.work_item:nth-child(6) {
+.work_item {
   margin-top: 80px;
+  margin-left: 100px;
+  opacity: 0.7;
 }
 
+.work_item:nth-child(1),
+.work_item:nth-child(2),
+.work_item:nth-child(3) {
+  margin-top: 0;
+}
+
+.work_item:nth-child(1),
+.work_item:nth-child(4) {
+  margin-left: 0;
+}
+
+.work_item:hover {
+  opacity: 1;
+  transition: all .3s;
+}
 
 .work_details {
   margin-top: 90px;
@@ -164,7 +182,7 @@
   color: #333;
 }
 
-
+/* skill */
 
 .skill {
   height: 500px;
@@ -202,7 +220,7 @@
   margin-top: 20px;
 }
 
-
+/* contact */
 
 .contact {
   height: 500px;
@@ -237,15 +255,23 @@
   transition: all .3s;
 }
 
-
-
-
-
-
-
-
+/* footer */
 
 .footer {
-  height: 100px;
   background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer_contents {
+  position: relative;
+}
+
+.footer_copyright {
+  position: absolute;
+  right: 200px;
+}
+
+.footer_text {
+  color: #fff;
 }
