@@ -15,10 +15,16 @@
 .inner {
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header */
 
 .header {
-  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   background-color: #fff;
 }
 
@@ -105,7 +111,6 @@
 /* description */
 
 .description {
-  height: 350px;
   background-color: #74cfae;
 }
 
@@ -120,6 +125,7 @@
   text-align: center;
   color: #fff;
   margin-left: 100px;
+  font-family: Raleway;
 }
 
 .main_description {
@@ -134,7 +140,6 @@
 /* work */
 
 .work {
-  height: 1000px;
   background-color: #f2f2f2;
 }
 
@@ -152,7 +157,6 @@
 
 .work_contents {
   width: 1100px;
-  height: 680px;
   margin: 0 auto;
 }
 
@@ -163,7 +167,7 @@
 
 .work_item {
   margin-top: 80px;
-  margin-left: 100px;
+  margin-right: 100px;
   opacity: 0.7;
 }
 
@@ -173,9 +177,8 @@
   margin-top: 0;
 }
 
-.work_item:nth-child(1),
-.work_item:nth-child(4) {
-  margin-left: 0;
+.work_item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .work_item:hover {
@@ -214,7 +217,6 @@
 /* skill */
 
 .skill {
-  height: 400px;
   background-color: #4e4e4e;
 }
 
@@ -253,7 +255,6 @@
 /* contact */
 
 .contact {
-  height: 500px;
   background-color: #f2f2f2;
 }
 
@@ -316,10 +317,6 @@
 
 /* description箇所の変更（画像、テキストの縦並び） */
 
-  .description {
-    height: 550px;
-  }
-
   .description-inner {
     display: flex;
     flex-direction: column;
@@ -336,13 +333,8 @@
 
 /* work箇所の変更（画像を縦並び） */
 
-.work {
-  height: 2250px;
-}
-
 .work_contents {
   width: 300px;
-  height: 1880px;
 }
 
 .work_item {
@@ -350,12 +342,12 @@
   margin-left: 0;
 }
 
-.work_item:nth-child(4) {
-  margin-top: 80px;
+.work_item:nth-child(3n) {
+  margin-bottom: 80px;
 }
 
 .work_details {
-  margin-top: 80px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
 }
@@ -369,10 +361,6 @@
 }
 
 /* skill箇所の変更（画像を縦並び） */
-
-.skill {
-  height: 1100px;
-}
 
 .skill_title {
   margin-bottom: 0;
@@ -447,12 +435,6 @@
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
-}
-
-/* description箇所の変更（画像、テキストの縦並び） */
-
-.description {
-  height: 600px;
 }
 
 /* contact箇所の変更（縦並び） */
