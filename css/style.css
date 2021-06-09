@@ -111,8 +111,7 @@ a {
 }
 
 .description_contents {
-  margin-top: 20px;
-  margin-left: 100px;
+  margin: 20px 0 0 100px;
   color: #fff;
   text-align: center;
 }
@@ -131,8 +130,7 @@ a {
 
 .work {
   background-color: #f2f2f2;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .work-inner {
@@ -148,12 +146,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  font-size: 0%;
+  font-size: 0;
 }
 
 .work_items {
-  margin-top: 80px;
-  margin-left: 100px;
+  margin: 80px 0 0 100px;
   opacity: 0.7;
   transition: all .3s;
 }
@@ -196,8 +193,7 @@ a {
 
 .skill {
   background-color: #4e4e4e;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px;
 }
 
 .skill-inner {
@@ -265,8 +261,7 @@ a {
 
 .footer {
   background-color: #74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
 }
 
 .footer_inner {
@@ -312,10 +307,6 @@ a {
   margin: 20px 50px 0 50px;
 }
 
-.main_description {
-  margin-top: 20px;
-}
-
 /* work箇所の変更（画像を縦並び） */
 
 .work_contents {
@@ -347,8 +338,7 @@ a {
 /* skill箇所の変更（画像を縦並び） */
 
 .skill {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 50px 0 80px;
 }
 
 .skill_contents {
@@ -408,8 +398,8 @@ a {
 /* title箇所の変更（テキストの縦並び） */
 
 .title {
-  padding-top: 160px;
-  padding-bottom: 130px;
+  padding: 160px 0 130px;
+  border-radius: 4px;
 }
 
 .title-inner {
@@ -433,7 +423,7 @@ a {
 }
 
 .contact_item {
-  width: 100%;
+  width: 767px;
 }
 
 }
