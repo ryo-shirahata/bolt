@@ -242,18 +242,18 @@ a {
 }
 
 .contact_item_frame {
-  font-size: 50px;
-}
-
-.contact_item {
   width: 185px;
   padding: 25px 0;
-  color: #74cfae;
+  font-size: 50px;
   transition: all .3s;
   text-align: center;
 }
 
-.contact_item:hover {
+.contact_item {
+  color: #74cfae;
+}
+
+.contact_item_frame:hover {
   background-color: #fff;
 }
 
@@ -422,8 +422,8 @@ a {
   flex-direction: column;
 }
 
-.contact_item {
-  width: 767px;
+.contact_item_frame {
+  width: 100%;
 }
 
 }
