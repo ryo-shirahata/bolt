@@ -22,6 +22,7 @@
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -46,7 +47,7 @@ a {
 
 .header {
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   background-color: #fff;
   padding: 15px 0;
   position: fixed;
@@ -67,40 +68,11 @@ a {
   box-sizing: border-box;
 }
 
-/* hamburger menu */
-
-.ham {
-  position: relative;
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
-  background-color: #fff;
-  border: solid 1px #c0c0c0;
-  display: none;
-}
-
-.ham_line {
-  position: absolute;
-  left: 10px;
-  width: 20px;
-  height: 2px;
-  background-color: #c0c0c0;
-}
-.ham_line1 {
-  top: 7px;
-}
-.ham_line2 {
-  top: 15px;
-}
-.ham_line3 {
-  top: 23px;
-}
-
 /* title */
 
 .title {
   background-color: #f2f2f2;
-  padding: 250px;
+  padding: 250px 0;
 }
 
 .title-inner {
@@ -123,19 +95,21 @@ a {
 
 .description {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .description-inner {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
 }
 
-.description_text {
-  text-align: center;
+.description_contents {
+  margin-left: 70px;
   color: #fff;
-  margin-left: 100px;
+  text-align: center;
+}
+
+.iphone_img {
+  vertical-align: top;
 }
 
 .main_description {
@@ -145,54 +119,49 @@ a {
 .second_description {
   font-size: 20px;
   margin-top: 35px;
+  font-weight: 25;
 }
 
 /* work */
 
 .work {
   background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .work-inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
 }
 
 .work_title {
   text-align: center;
   font-size: 24px;
   color: #333;
-  margin-bottom: 40px;
 }
 
 .work_contents {
-  width: 1100px;
-  margin: 0 auto;
-}
-
-.work_items {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
   font-size: 0%;
 }
 
-.work_item {
+.work_items {
   margin-top: 80px;
-  margin-right: 100px;
+  margin-left: 100px;
   opacity: 0.7;
   transition: all .3s;
 }
 
-.work_item:nth-child(1),
-.work_item:nth-child(2),
-.work_item:nth-child(3) {
+.work_items:nth-child(-n+3) {
   margin-top: 0;
 }
 
-.work_item:nth-child(3n) {
-  margin-right: 0;
+.work_items:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-.work_item:hover {
+.work_items:hover {
   opacity: 1;
 }
 
@@ -201,10 +170,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 200px;
 }
 
 .work_details_text {
   text-align: center;
+  line-height: 20px;
 }
 
 .work_details_button {
@@ -215,21 +186,21 @@ a {
 
 .skill {
   background-color: #4e4e4e;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .skill-inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
 }
 
 .skill_title {
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
   font-size: 24px;
 }
 
 .skill_contents {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -254,10 +225,10 @@ a {
 
 .contact {
   background-color: #f2f2f2;
+  padding: 200px 0;
 }
 
 .contact-inner {
-  padding: 200px 0;
 }
 
 .contact_contents {
@@ -299,7 +270,7 @@ a {
 
 .footer_copyright {
   position: absolute;
-  right: 200px;
+  right: 20px;
 }
 
 .footer_text {
@@ -313,59 +284,68 @@ a {
 
 @media screen and (max-width: 1199px) {
 
+/* 横幅 */
+
+  .inner {
+    max-width: 97%;
+  }
 /* description箇所の変更（画像、テキストの縦並び） */
 
-  .description-inner {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 25px;
-  }
+.description {
+  padding: 50px 0 25px 0;
+}
 
-  .description_text {
-    margin-left: 0;
-  }
+.description-inner {
+  display: block;
+}
 
-  .main_description {
-    margin-top: 25px;
-  }
+.description_contents {
+  margin-left: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main_description {
+  margin-top: 20px;
+}
 
 /* work箇所の変更（画像を縦並び） */
 
 .work_contents {
-  width: 300px;
+  flex-direction: column;
+  align-content: center;
 }
 
-.work_item {
+.work_items {
   margin-top: 0;
   margin-left: 0;
 }
 
-.work_item:nth-child(3n) {
-  margin-bottom: 80px;
+.work_items:nth-child(3n+4) {
+  margin-top: 80px;
 }
 
 .work_details {
-  margin-top: 0;
-  display: flex;
+  margin-top: 80px;
   flex-direction: column;
-}
-
-.work_details_text {
-  margin-bottom: 40px;
+  align-content: center;
+  padding: 0;
 }
 
 .work_details_button {
   margin-left: 0;
+  margin-top: 40px;
 }
 
 /* skill箇所の変更（画像を縦並び） */
 
-.skill_title {
-  margin-bottom: 0;
+.skill {
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .skill_contents {
-  display: flex;
+  margin-top: 50px;
   align-items: center;
   flex-direction: column;
 }
@@ -376,13 +356,7 @@ a {
 }
 
 .skill_item:first-child {
-  margin-top: 40px;
-}
-
-/* footer */
-
-.footer_copyright {
-  right: 20px;
+  margin-top: 0;
 }
 
 }
@@ -393,22 +367,35 @@ a {
 
 /* header対応（contactボタンをhamburger menuへ） */
 
-.header_contents {
-  padding: 15px 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-  .header_rogo {
-  margin-right: 300px;
-}
-
 .header_contact_button {
   display: none;
 }
 
 .ham {
-  display: block;
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px #c0c0c0;
+}
+
+.ham_line {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #c0c0c0;
+}
+.ham_line1 {
+  top: 7px;
+}
+.ham_line2 {
+  top: 15px;
+}
+.ham_line3 {
+  top: 23px;
 }
 
 /* title箇所の変更（テキストの縦並び） */
@@ -419,31 +406,22 @@ a {
 }
 
 .title-inner {
-  display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .main_title {
-  font-size: 90px;
-  font-weight: 700;
-  color: #74cfae;
-}
-
-.second_title {
-  font-size: 30px;
-  color: #c0c0c0;
-  margin-top: 20px;
+  font-size: 80px;
 }
 
 /* contact箇所の変更（縦並び） */
 
-.contact-inner {
+.contact {
   padding: 50px 0;
 }
 
 .contact_contents {
-  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
