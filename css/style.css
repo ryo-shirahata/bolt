@@ -243,13 +243,14 @@ a {
 
 .contact_item_frame {
   width: 185px;
-  padding: 25px 0;
   font-size: 50px;
   transition: all .3s;
   text-align: center;
 }
 
 .contact_item {
+  width: 185px;
+  padding: 25px 0;
   color: #74cfae;
 }
 
